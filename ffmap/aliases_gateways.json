@@ -3,10 +3,6 @@
       "name" : "gateway-warpzone",
       "vpn" : true
    },
-   "de:ad:be:ef:43:03" : {
-      "name" : "gateway-warpzone-old",
-      "vpn" : true
-   },
    "de:ad:be:ef:43:04" : {
       "name" : "gateway-fusselkater",
       "vpn" : true
