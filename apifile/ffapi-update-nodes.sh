@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APIFILE="/var/www/wordpress/ressources/ffapi.json"
+APIFILE="/var/www/wordpress/ressources/FreifunkMuenster-api.json"
 NUMNODES=$(sh -c "batctl vd json; batadv-vis -f json" | grep -c '{ \"primary\" : .* }')
 
 echo "$NUMNODES"
