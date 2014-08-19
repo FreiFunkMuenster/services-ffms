@@ -1,0 +1,85 @@
+{
+  "name": "Freifunk Münster",
+  "url": "https://muenster.freifunk.net",
+  "location": {
+    "city": "Münster",
+    "country": "DE",
+    "lat": 51.9601,
+    "lon": 7.62506,
+    "address": {
+      "Name": "Warpzone e.V.",
+      "Street": "Am Hawerkamp 31",
+      "Zipcode": "48155"
+    }
+  },
+  "contact": {
+    "email": "info@freifunk-muenster.de",
+    "phone": "+49 251 39500271",
+    "twitter": "@freifunk_ms"
+  },
+  "state": {
+    "nodes": 70,
+    "lastchange": "2014-08-19T20:24:52.056Z",
+    "focus": []
+  },
+  "services": [
+    {
+      "serviceName": "Nodes Highscore",
+      "serviceDescription": "Highscore for all Nodes",
+      "internalUri": "highscore.ffms"
+    }
+  ],
+  "timeline": [
+    {
+      "decription": "Rebirth of Freifunk in Münster with the end of the experimental stage. Talk about Freifunk in the Warpzone.",
+      "timestamp": "2014-07-12"
+    }
+  ],
+  "nodeMaps": [
+    {
+      "url": "https://freifunk-muenster.de/map/geomap.html",
+      "interval": "once per minute",
+      "technicalType": "ffmap",
+      "mapType": "geographical"
+    }
+  ],
+  "techDetails": {
+    "firmware": {
+      "name": "gluon",
+      "url": "https://freifunk-muenster.de/firmwareliste/"
+    },
+    "dns": [
+      {
+        "domainname": "ffms",
+        "nameserver": [
+          "10.43.0.3",
+          "10.43.0.4",
+          "10.43.0.5"
+        ]
+      }
+    ],
+    "networks": {
+      "ipv6": [
+        {
+          "network": "fd68:e2ea:a53::/48"
+        }
+      ],
+      "ipv4": [
+        {
+          "network": "10.43.0.0/16"
+        }
+      ]
+    },
+    "routing": [
+      "batman-adv"
+    ],
+    "updatemode": [
+      "manual",
+      "autoupdate"
+    ],
+    "legals": [
+      "vpninternational"
+    ]
+  },
+  "api": "0.4.1"
+}
