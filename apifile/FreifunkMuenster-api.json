@@ -1,6 +1,6 @@
 {
   "name": "Freifunk Münster",
-  "url": "http://muenster.freifunk.net",
+  "url": "https://freifunk-muenster.de",
   "location": {
     "city": "Münster",
     "country": "DE",
@@ -18,8 +18,8 @@
     "twitter": "@freifunk_ms"
   },
   "state": {
-    "nodes": 70,
-    "lastchange": "2014-08-20T18:34:01.CEST",
+    "nodes": 74,
+    "lastchange": "2014-08-20T19:35:01.CEST",
     "focus": []
   },
   "services": [
