@@ -11,5 +11,5 @@ grep -q '^    "nodes":.*,$' "$APIFILE" || ! grep -q '^  "state": {$' "$APIFILE" 
 	sed -i 's/^  "state": {/  "state": {\n    "nodes": 0,/' "$APIFILE"
 
 sed -i "s/^    \"nodes\": .*/    \"nodes\": $NUMNODES,/;\
-	s/^    \"lastchange\": .*/    \"lastchange\": $(date "+%s")/" \
+	s/^    \"lastchange\": .*/    \"lastchange\": $(date "+%s"),/" \
 		"$APIFILE"
