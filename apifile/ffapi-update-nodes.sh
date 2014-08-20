@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APIFILE="/var/www/wordpress/ressources/FreifunkMuenster-api.json"
-NUMNODES=$(sh -c "batctl vd json; batadv-vis -f json" | grep -c '{ \"primary\" : .* }')
+NUMNODES=$(sh -c "/usr/sbin/batctl vd json; /usr/sbin/batadv-vis -f json" | grep -c '{ \"primary\" : .* }')
 
 echo "$NUMNODES"
 
