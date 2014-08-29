@@ -1,18 +1,22 @@
 {
    "de:ad:be:ef:43:02" : {
       "name" : "gateway-fanlin",
-      "vpn" : true
+      "vpn" : true,
+      "firmware" : "Debian 7"
    },
    "de:ad:be:ef:43:04" : {
       "name" : "gateway-fusselkater",
-      "vpn" : true
+      "vpn" : true,
+      "firmware" : "Debian 8"
    },
    "de:ad:be:ef:43:05" : {
       "name" : "gateway-commander1024",
-      "vpn" : true
+      "vpn" : true,
+      "firmware" : "Debian 7"
    },   
    "de:ad:be:ef:43:11" : {
       "name" : "ffms-services",
-      "vpn" : true
+      "vpn" : true,
+      "firmware" : "Debian 8"
    }   
 }
