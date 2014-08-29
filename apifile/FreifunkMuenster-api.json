@@ -35,6 +35,14 @@
       "timestamp": "2014-07-12"
     }
   ],
+  "feeds": [
+    {
+      "name": "FFMS Webseite",
+      "category": "blog",
+      "type": "rss",
+      "url": "https://freifunk-muenster.de/?feed=rss2"
+    }
+  ],
   "nodeMaps": [
     {
       "url": "https://freifunk-muenster.de/map/geomap.html",
