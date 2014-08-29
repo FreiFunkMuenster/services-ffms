@@ -2,21 +2,29 @@
    "de:ad:be:ef:43:02" : {
       "name" : "gateway-fanlin",
       "vpn" : true,
-      "firmware" : "Debian 7"
+      "firmware" : "Debian",
+      "branch" : "stable",
+      "hardware" : "KVM"
    },
    "de:ad:be:ef:43:04" : {
       "name" : "gateway-fusselkater",
       "vpn" : true,
-      "firmware" : "Debian 8"
+      "firmware" : "Debian",
+      "branch" : "testing",
+      "hardware" : "KVM"
    },
    "de:ad:be:ef:43:05" : {
       "name" : "gateway-commander1024",
       "vpn" : true,
-      "firmware" : "Debian 7"
+      "firmware" : "Debian",
+      "branch" : "stable",
+      "hardware" : "KVM"
    },   
    "de:ad:be:ef:43:11" : {
       "name" : "ffms-services",
       "vpn" : true,
-      "firmware" : "Debian 8"
+      "firmware" : "Debian",
+      "branch" : "testing",
+      "hardware" : "KVM"
    }   
 }
