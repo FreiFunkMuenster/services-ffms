@@ -10,7 +10,7 @@
       "name" : "gateway-fusselkater",
       "vpn" : true,
       "firmware" : "Debian",
-      "branch" : "testing",
+      "branch" : "stable",
       "hardware" : "KVM"
    },
    "de:ad:be:ef:43:05" : {
