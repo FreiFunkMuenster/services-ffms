@@ -1,0 +1,28 @@
+#!/bin/sh
+
+NAME=nping
+
+GATEWAY=$2
+TARGET_IP=213.73.89.123
+INTERFACE=br0
+
+print_exit()
+{
+	echo -n "$NAME check: ${2}: "
+		echo "$3" | tail -n 1 | sed -e 's/|//g'
+		exit $1
+}
+
+MAC=`ping -c1 $GATEWAY >/dev/null; /usr/sbin/arp $GATEWAY | tail -n1 | awk '{print $3}'`
+OUTPUT="`sudo /usr/bin/nping --delay 2 --count 5 --tcp --dest-mac $MAC -e $INTERFACE $TARGET_IP | grep 'Raw packets'`"
+res=`echo $OUTPUT | awk '{print $12}'` 
+
+if [ "$res" -ge 2 ]; then
+	print_exit 2 "CRITICAL" "$OUTPUT"
+fi
+
+if [ "$res" -lt 2 ]; then
+	print_exit 0 "OK" "$OUTPUT"
+fi
+
+print_exit 3 "Unknown: $OUTPUT"
