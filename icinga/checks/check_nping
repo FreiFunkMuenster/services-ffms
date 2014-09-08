@@ -31,7 +31,7 @@ print_exit()
 }
 
 MAC=`ping -c1 $GATEWAY >/dev/null; /usr/sbin/arp $GATEWAY | tail -n1 | awk '{print $3}'`
-OUTPUT="`sudo /usr/bin/nping --rate $RATE --count $COUNT --$MODE --dest-mac $MAC -e $INTERFACE $TARGET_IP | grep 'Raw packets'`"
+OUTPUT="`/usr/bin/nping --rate $RATE --count $COUNT --$MODE --dest-mac $MAC -e $INTERFACE $TARGET_IP | grep 'Raw packets'`"
 res=`echo $OUTPUT | awk '{print $12}'` 
 
 if [ "$(($res*100/$COUNT))" -ge $CRITICAL ]; then
