@@ -15,11 +15,13 @@
   "contact": {
     "email": "info@freifunk-muenster.de",
     "phone": "+49 251 39500271",
+    "irc": "irc://irc.hackint.org/ffms",
+    "facebook": "https://www.facebook.com/FreifunkMS",
     "twitter": "@freifunk_ms"
   },
   "state": {
-    "nodes": 74,
-    "lastchange": "2014-08-20T19:35:01.CEST",
+    "nodes": 157,
+    "lastchange": "2014-12-02T22:57:21.714Z",
     "focus": []
   },
   "services": [
@@ -27,40 +29,75 @@
       "serviceName": "Nodes Highscore",
       "serviceDescription": "Highscore for all Nodes",
       "internalUri": "highscore.ffms"
+    },
+    {
+      "serviceName": "Knotengraph",
+      "serviceDescription": "Graph/Karte/Liste der Freifunk Knoten",
+      "internalUri": "map.ffms"
     }
   ],
   "timeline": [
     {
-      "decription": "Rebirth of Freifunk in Münster with the end of the experimental stage. Talk about Freifunk in the Warpzone.",
-      "timestamp": "2014-07-12"
+      "description": "Rebirth of Freifunk in Münster with the end of the experimental stage. Talk about Freifunk in the Warpzone.",
+      "timestamp": "2014-07-12",
+      "url": "https://www.warpzone.ms/perma/freifunk-vortrag/1671/"
     }
   ],
   "feeds": [
     {
-      "name": "FFMS Webseite",
+      "name": "Freifunk Münster Homepage Beitrags Feed",
       "category": "blog",
       "type": "rss",
-      "url": "https://freifunk-muenster.de/?feed=rss2"
+      "url": "https://freifunk-muenster.de/feed/"
+    },
+    {
+      "name": "Freifunk Münster Wiki Feed",
+      "category": "wiki",
+      "type": "rss",
+      "url": "https://freifunk-muenster.de/wiki/feed.php"
     }
   ],
   "nodeMaps": [
     {
       "url": "https://freifunk-muenster.de/map/geomap.html",
-      "interval": "once per minute",
+      "interval": "1x pro Minute",
       "technicalType": "ffmap",
       "mapType": "geographical"
+    },
+    {
+      "url": "https://freifunk-muenster.de/map/graph.html",
+      "interval": "1x pro Minute",
+      "technicalType": "ffmap",
+      "mapType": "structural"
+    },
+    {
+      "url": "https://freifunk-muenster.de/map/list.html",
+      "interval": "1x pro Minute",
+      "technicalType": "ffmap",
+      "mapType": "list/status"
     }
   ],
+  "support": {
+    "club": {
+      "name": "warpzone e.V.",
+      "street": "Am Hawerkamp 31",
+      "zip": "48155",
+      "city": "Münster",
+      "url": "https://www.warpzone.ms/",
+      "email": "office@warpzone.ms"
+    }
+  },
   "techDetails": {
     "firmware": {
       "name": "gluon",
-      "url": "https://freifunk-muenster.de/firmwareliste/"
+      "url": "https://freifunk-muenster.de/firmwareliste/",
+      "docs": "https://github.com/FreiFunkMuenster/site-ffms"
     },
     "dns": [
       {
         "domainname": "ffms",
         "nameserver": [
-          "10.43.0.3",
+          "10.43.0.2",
           "10.43.0.4",
           "10.43.0.5"
         ]
@@ -89,5 +126,5 @@
       "vpninternational"
     ]
   },
-  "api": "0.4.1"
+  "api": "0.4.4"
 }
