@@ -20,7 +20,21 @@
       "branch" : "stable",
       "hardware" : "KVM"
    },   
+   "0e:37:d1:d2:2a:ab" : {
+      "name" : "icvpn-test",
+      "vpn" : true,
+      "firmware" : "Debian",
+      "branch" : "testing",
+      "hardware" : "KVM"
+   }   
    "de:ad:be:ef:43:11" : {
+      "name" : "ffms-services-legacy",
+      "vpn" : true,
+      "firmware" : "Debian",
+      "branch" : "testing",
+      "hardware" : "KVM"
+   }   
+   "de:ad:be:ef:43:10" : {
       "name" : "ffms-services",
       "vpn" : true,
       "firmware" : "Debian",
