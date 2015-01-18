@@ -26,14 +26,14 @@
       "firmware" : "Debian",
       "branch" : "testing",
       "hardware" : "KVM"
-   }   
+   },   
    "de:ad:be:ef:43:11" : {
       "name" : "ffms-services-legacy",
       "vpn" : true,
       "firmware" : "Debian",
       "branch" : "testing",
       "hardware" : "KVM"
-   }   
+   },   
    "de:ad:be:ef:43:10" : {
       "name" : "ffms-services",
       "vpn" : true,
