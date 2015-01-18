@@ -1,8 +1,8 @@
 {
-  "name": "Freifunk Münster",
+  "name": "Freifunk Muenster",
   "url": "https://freifunk-muenster.de",
   "location": {
-    "city": "Münster",
+    "city": "Muenster",
     "country": "DE",
     "lat": 51.9601,
     "lon": 7.62506,
@@ -20,8 +20,8 @@
     "twitter": "@freifunk_ms"
   },
   "state": {
-    "nodes": 157,
-    "lastchange": "2014-12-02T22:57:21.714Z",
+    "nodes": #NUMNODES#,
+    "lastchange": "#LASTCHANGE#",
     "focus": []
   },
   "services": [
