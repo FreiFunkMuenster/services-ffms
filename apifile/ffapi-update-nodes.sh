@@ -9,5 +9,5 @@ echo "$NUMNODES"
 
 [[ $NUMNODES =~ ^[0-9]+$ ]] || exit 1
 
-cat $TEMPLATE | sed 's/#NUMNODES#/$NUMNODES/' | sed 's/#LASTCHANGE#/$(date "+%Y-%m-%dT%T.%Z")/' > $APIFILE
+cat $TEMPLATE | sed 's/#NUMNODES#/'$NUMNODES'/' | sed 's/#LASTCHANGE#/'$(date "+%Y-%m-%dT%T.%Z")'/' > $APIFILE
 
