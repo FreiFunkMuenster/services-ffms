@@ -18,6 +18,7 @@ RUN npm install -g grunt-cli bower
 # 
 RUN cd /var && \   
     git clone https://github.com/ffnord/ffmap-d3.git && \
+	cd /var/ffmap-d3/ && \
 	git checkout 4eac13cd60ffb0dfd78a0d8dafdd2fabdf9bc1f2
    
 # Copy FF-Map Config  
