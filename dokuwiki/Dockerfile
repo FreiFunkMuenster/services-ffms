@@ -10,6 +10,6 @@ RUN awk '/<Directory \/var\/www\/>/,/AllowOverride None/{sub("None", "All",$0)}{
 # Expose ports
 EXPOSE 80
 
-ENTRYPOINT ["/entrypoint.sh"]
+# startup
 CMD ["apache2-foreground"]
 
