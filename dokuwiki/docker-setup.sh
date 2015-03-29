@@ -10,6 +10,6 @@ docker rm dokuwiki
 docker build -t dokuwiki .  
 
 # Setup and Rund Docker Container 
-docker run --name=dokuwiki --restart=always -d -p 127.0.0.1:8081:80 -v /var/data/dokuwiki:/var/www/dokuwiki dokuwiki 
+docker run --name=dokuwiki --restart=always -d -p 127.0.0.1:8081:80 -v /var/data/dokuwiki:/var/www/html dokuwiki 
 
 
