@@ -2,6 +2,8 @@ FROM debian:wheezy
 
 MAINTAINER Christian Elberfeld <elberfeld@web.de>
 
+COPY sources.list /etc/apt/sources.list 
+
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN \
