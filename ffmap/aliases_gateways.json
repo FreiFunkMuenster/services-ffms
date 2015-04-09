@@ -47,7 +47,7 @@
       "firmware" : "FFMS Service",
       "branch" : "testing",
       "hardware" : "KVM"
-   }   
+   },   
    "de:ad:be:ef:43:13" : {
       "name" : "ffms-monitoring",
       "vpn" : false,
