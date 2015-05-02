@@ -15,7 +15,7 @@ if [ $RETVAL -eq 0 ]
   MD5OLD=`md5sum /var/tmp/db.nodes.ffms` 
   MD5NEW=`md5sum /var/tmp/db.nodes.ffms.new` 
   
-  if [ "$MD5OLD" -ne "$MD5NEW" ] 
+  if [ "$MD5OLD" != "$MD5NEW" ] 
     then
 
     # Copy generated output 
