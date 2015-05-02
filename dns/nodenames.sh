@@ -26,7 +26,7 @@ if [ $RETVAL -eq 0 ]
   fi 
   
   # cleanup 
-  rm /var/tmp/db.nodes.ffms.new
+  rm -f /var/tmp/db.nodes.ffms.new
   
 fi 
 
