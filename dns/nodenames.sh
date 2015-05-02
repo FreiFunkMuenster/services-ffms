@@ -12,8 +12,8 @@ if [ $RETVAL -eq 0 ]
   then 
 
   # compare md5 sums 
-  MD5OLD=`md5sum /var/tmp/db.nodes.ffms` 
-  MD5NEW=`md5sum /var/tmp/db.nodes.ffms.new` 
+  MD5OLD=`sed '1,10d' /var/tmp/db.nodes.ffms | md5sum` 
+  MD5NEW=`sed '1,10d' /var/tmp/db.nodes.ffms.new | md5sum` 
   
   if [ "$MD5OLD" != "$MD5NEW" ] 
     then
