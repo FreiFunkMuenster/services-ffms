@@ -5,7 +5,7 @@ set -e
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # Generate Bind DB with Node Names 
-python /var/dns/services-ffms/nodenames.py > /var/tmp/db.nodes.ffms.new
+python /var/services-ffms/dns/nodenames.py > /var/tmp/db.nodes.ffms.new
 RETVAL=$?
 
 if [ $RETVAL -eq 0 ] 
