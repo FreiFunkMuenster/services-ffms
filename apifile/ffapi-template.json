@@ -1,6 +1,6 @@
 {
-  "name": "Freifunk Muenster",
-  "url": "https://freifunk-muenster.de",
+  "name": "Freifunk Muensterland",
+  "url": "https://freifunk-muensterland.de",
   "location": {
     "city": "Muenster",
     "country": "DE",
@@ -26,17 +26,17 @@
   },
   "services": [
     {
-      "serviceName": "Nodes Highscore",
-      "serviceDescription": "Highscore for all Nodes",
-      "internalUri": "highscore.ffms"
-    },
-    {
-      "serviceName": "Knotengraph",
-      "serviceDescription": "Graph/Karte/Liste der Freifunk Knoten",
-      "internalUri": "map.ffms"
+      "serviceName": "Firmware Update",
+      "serviceDescription": "Firmware Update Server",
+      "internalUri": "firmware.ffms"
     }
   ],
   "timeline": [
+    {
+      "description": "Renaming to Freifunk Muensterland",
+      "timestamp": "2015-05-04",
+      "url": "https://freifunk-muensterland.de/neue-url-freifunk-muensterland-de/"
+    },
     {
       "description": "Rebirth of Freifunk in Münster with the end of the experimental stage. Talk about Freifunk in the Warpzone.",
       "timestamp": "2014-07-12",
@@ -45,36 +45,23 @@
   ],
   "feeds": [
     {
-      "name": "Freifunk Münster Homepage Beitrags Feed",
+      "name": "Freifunk Münsterland Homepage Beitrags Feed",
       "category": "blog",
       "type": "rss",
-      "url": "https://freifunk-muenster.de/feed/"
+      "url": "https://freifunk-muensterland.de/feed/"
     },
     {
-      "name": "Freifunk Münster Wiki Feed",
+      "name": "Freifunk Münsterland Wiki Feed",
       "category": "wiki",
       "type": "rss",
-      "url": "https://freifunk-muenster.de/wiki/feed.php"
+      "url": "https://freifunk-muensterland.de/wiki/feed.php"
     }
   ],
   "nodeMaps": [
     {
-      "url": "https://freifunk-muenster.de/map/geomap.html",
+      "url": "https://freifunk-muensterland.de/map/",
       "interval": "1x pro Minute",
       "technicalType": "ffmap",
-      "mapType": "geographical"
-    },
-    {
-      "url": "https://freifunk-muenster.de/map/graph.html",
-      "interval": "1x pro Minute",
-      "technicalType": "ffmap",
-      "mapType": "structural"
-    },
-    {
-      "url": "https://freifunk-muenster.de/map/list.html",
-      "interval": "1x pro Minute",
-      "technicalType": "ffmap",
-      "mapType": "list/status"
     }
   ],
   "support": {
@@ -99,14 +86,15 @@
         "nameserver": [
           "10.43.0.2",
           "10.43.0.4",
-          "10.43.0.5"
+          "10.43.0.5",
+          "10.43.0.6"
         ]
       }
     ],
     "networks": {
       "ipv6": [
         {
-          "network": "fd68:e2ea:a53::/48"
+          "network": "2a03:2260:115::/64"
         }
       ],
       "ipv4": [
@@ -121,10 +109,7 @@
     "updatemode": [
       "manual",
       "autoupdate"
-    ],
-    "legals": [
-      "vpninternational"
     ]
   },
-  "api": "0.4.5"
+  "api": "0.4.8"
 }
