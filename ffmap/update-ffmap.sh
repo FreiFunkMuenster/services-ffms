@@ -9,7 +9,7 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 cd /tmp
 
 # FFMap Backend ausführen, Daten werden in /var/www/map/rawdata geschrieben 
-/usr/bin/python3 /var/ffmap-backend/backend.py -d /var/www/map/rawdata/ -a /var/services-ffms/ffmap/aliases_gateway.json --vpn de:ad:be:ef:43:02 de:ad:be:ef:43:03 de:ad:be:ef:43:04 de:ad:be:ef:43:05 de:ad:be:ef:43:06 de:ad:be:ef:43:07 de:ad:be:ef:43:08 de:ad:be:ef:43:09
+/usr/bin/python3 /var/ffmap-backend/backend.py -d /var/www/map/rawdata/ -a /var/services-ffms/ffmap/aliases_gateways.json --vpn de:ad:be:ef:43:02 de:ad:be:ef:43:03 de:ad:be:ef:43:04 de:ad:be:ef:43:05 de:ad:be:ef:43:06 de:ad:be:ef:43:07 de:ad:be:ef:43:08 de:ad:be:ef:43:09
 
 # Aus der Nodes.json die Owner Informationen entfernen 
 jq '.nodes = (.nodes | with_entries(del(.value.nodeinfo.owner)))' < /var/www/map/rawdata/nodes.json > /var/www/map/build/data/nodes.json
