@@ -1,58 +1,129 @@
-{
-   "de:ad:be:ef:43:02" : {
-      "name" : "gateway-fanlin",
-      "vpn" : true,
-      "firmware" : "FFMS Gateway",
-      "branch" : "stable",
-      "hardware" : "KVM"
-   },
-   "de:ad:be:ef:43:04" : {
-      "name" : "gateway-fusselkater",
-      "vpn" : true,
-      "firmware" : "FFMS Gateway",
-      "branch" : "stable",
-      "hardware" : "KVM"
-   },
-   "de:ad:be:ef:43:05" : {
-      "name" : "gateway-commander1024",
-      "vpn" : true,
-      "firmware" : "FFMS Gateway",
-      "branch" : "stable",
-      "hardware" : "KVM"
-   },   
-   "de:ad:be:ef:43:06" : {
-      "name" : "gateway-parad0x",
-      "vpn" : true,
-      "firmware" : "FFMS Gateway",
-      "branch" : "stable",
-      "hardware" : "Hyper-V"
-   },   
-   "0e:37:d1:d2:2a:ab" : {
-      "name" : "icvpn-test",
-      "vpn" : true,
-      "firmware" : "FFMS Gateway",
-      "branch" : "testing",
-      "hardware" : "KVM"
-   },   
-   "de:ad:be:ef:43:11" : {
-      "name" : "ffms-services-legacy",
-      "vpn" : false,
-      "firmware" : "FFMS Service",
-      "branch" : "testing",
-      "hardware" : "KVM"
-   },   
-   "de:ad:be:ef:43:10" : {
-      "name" : "ffms-services",
-      "vpn" : false,
-      "firmware" : "FFMS Service",
-      "branch" : "testing",
-      "hardware" : "KVM"
-   },   
-   "de:ad:be:ef:43:13" : {
-      "name" : "ffms-monitoring",
-      "vpn" : false,
-      "firmware" : "FFMS Service",
-      "branch" : "testing",
-      "hardware" : "KVM"
-   }    
-}
+[
+  {
+    "node_id": "gateway-fanlin",
+    "hostname": "gateway-fanlin",
+    "network": {
+      "mesh_interfaces": [
+        "de:ad:be:ef:43:02"
+      ]
+    },
+    "hardware": {
+      "model": "qemu-kvm"
+    },
+    "software": {
+      "firmware": {
+        "release": "Wheezy",
+        "base": "Debian"
+      }
+    }
+  },
+  {
+    "node_id": "gateway-fusselkater",
+    "hostname": "gateway-fusselkater",
+    "network": {
+      "mesh_interfaces": [
+        "de:ad:be:ef:43:04"
+      ]
+    },
+    "hardware": {
+      "model": "qemu-kvm"
+    },
+    "software": {
+      "firmware": {
+        "release": "Wheezy",
+        "base": "Debian"
+      }
+    }
+  },
+  {
+    "node_id": "gateway-commander1024",
+    "hostname": "gateway-commander1024",
+    "network": {
+      "mesh_interfaces": [
+        "de:ad:be:ef:43:05"
+      ]
+    },
+    "hardware": {
+      "model": "qemu-kvm"
+    },
+    "software": {
+      "firmware": {
+        "release": "Wheezy",
+        "base": "Debian"
+      }
+    }
+  },
+  {
+    "node_id": "gateway-parad0x",
+    "hostname": "gateway-parad0x",
+    "network": {
+      "mesh_interfaces": [
+        "de:ad:be:ef:43:06"
+      ]
+    },
+    "hardware": {
+      "model": "qemu-kvm"
+    },
+    "software": {
+      "firmware": {
+        "release": "Wheezy",
+        "base": "Debian"
+      }
+    }
+  },
+  {
+    "node_id": "icvpn-test",
+    "hostname": "icvpn-test",
+    "network": {
+      "mesh_interfaces": [
+        "0e:37:d1:d2:2a:ab"
+      ]
+    },
+    "hardware": {
+      "model": "qemu-kvm"
+    },
+    "software": {
+      "firmware": {
+        "release": "Wheezy",
+        "base": "Debian"
+      }
+    }
+  },
+  {
+    "node_id": "ffms-services",
+    "hostname": "ffms-services",
+    "network": {
+      "mesh_interfaces": [
+        "de:ad:be:ef:43:10"
+      ]
+    },
+    "hardware": {
+      "model": "qemu-kvm"
+    },
+    "software": {
+      "firmware": {
+        "release": "Wheezy",
+        "base": "Debian"
+      }
+    }
+  },
+  {
+    "node_id": "ffms-monitoring",
+    "hostname": "ffms-monitoring",
+    "network": {
+      "mesh_interfaces": [
+        "de:ad:be:ef:43:13"
+      ]
+    },
+    "hardware": {
+      "model": "qemu-kvm"
+    },
+    "software": {
+      "firmware": {
+        "release": "Wheezy",
+        "base": "Debian"
+      }
+    }
+  }
+]
+
