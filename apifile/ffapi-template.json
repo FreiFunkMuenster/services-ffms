@@ -61,7 +61,7 @@
     {
       "url": "https://freifunk-muensterland.de/map/",
       "interval": "1x pro Minute",
-      "technicalType": "ffmap",
+      "technicalType": "ffmap"
     }
   ],
   "support": {
