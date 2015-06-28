@@ -91,10 +91,10 @@ conf.client_themes = [
 conf.restrict_server = "irc.hackint.org";
 conf.restrict_server_port = 9999;
 conf.restrict_server_ssl = true;
-conf.restrict_server_channel = "#ffms";
-conf.restrict_server_channel_key = "";
-conf.restrict_server_password = "";
-conf.restrict_server_nick = "ffms_";
+//conf.restrict_server_channel = "#ffms";
+//conf.restrict_server_channel_key = "";
+//conf.restrict_server_password = "";
+//conf.restrict_server_nick = "ffms_";
 
 
 
