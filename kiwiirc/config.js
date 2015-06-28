@@ -54,8 +54,8 @@ conf.quit_message = "http://www.kiwiirc.com/ - A hand-crafted IRC client";
 
 conf.client = {
     server: 'irc.hackint.org',
-    port:    9999,
-    ssl:     true,
+    port:    6667,
+    ssl:     false,
     channel: '#ffms',
     channel_key: '',
     nick:    'ffms_?',
@@ -83,9 +83,9 @@ conf.client_themes = [
 
 
 // If set, the client may only connect to this 1 IRC server
-conf.restrict_server = "irc.hackint.org";
-conf.restrict_server_port = 9999;
-conf.restrict_server_ssl = true;
+//conf.restrict_server = "irc.hackint.org";
+//conf.restrict_server_port = 9999;
+//conf.restrict_server_ssl = true;
 conf.restrict_server_channel = "#ffms";
 //conf.restrict_server_channel_key = "";
 //conf.restrict_server_password = "";
