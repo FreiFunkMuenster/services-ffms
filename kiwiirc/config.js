@@ -11,6 +11,11 @@ conf.servers.push({
     address: "0.0.0.0"
 });
 
+// Network interface for outgoing connections
+conf.outgoing_address = {
+    IPv4: '0.0.0.0'
+    //IPv6: '::'
+};
 
 conf.public_http = "client/";
 conf.max_client_conns = 50;
