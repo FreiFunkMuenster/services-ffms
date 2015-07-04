@@ -33,12 +33,7 @@ RUN wget -O osTicket.zip http://osticket.com/sites/default/files/download/osTick
     chmod 700 /data/upload/setup_hidden
     
 # Download languages packs
-RUN wget -O upload/include/i18n/fr.phar http://osticket.com/sites/default/files/download/lang/fr.phar && \
-    wget -O upload/include/i18n/ar.phar http://osticket.com/sites/default/files/download/lang/ar.phar && \
-    wget -O upload/include/i18n/pt_BR.phar http://osticket.com/sites/default/files/download/lang/pt_BR.phar && \
-    wget -O upload/include/i18n/it.phar http://osticket.com/sites/default/files/download/lang/it.phar && \
-    wget -O upload/include/i18n/es_ES.phar http://osticket.com/sites/default/files/download/lang/es_ES.phar && \
-    wget -O upload/include/i18n/de.phar http://osticket.com/sites/default/files/download/lang/de.phar
+RUN wget -O upload/include/i18n/de.phar http://osticket.com/sites/default/files/download/lang/de.phar
 
 # Configure nginx
 RUN sed -i -e"s/keepalive_timeout\s*65/keepalive_timeout 2/" /etc/nginx/nginx.conf && \
