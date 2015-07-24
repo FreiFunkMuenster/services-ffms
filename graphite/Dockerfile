@@ -27,6 +27,8 @@ RUN curl -s https://bootstrap.pypa.io/get-pip.py > /tmp/get-pip.py
 RUN python /tmp/get-pip.py
 
 ENV GRAPHITE_VERSION 0.9.13-pre1
+ENV WHISPER_VERSION 0.9.13
+ENV CARBON_VERSION 0.9.13-pre1
 
 # install graphite modules
 RUN apt-get update && apt-get install -y libcairo2-dev --fix-missing && rm -fr /var/lib/apt/lists/*
@@ -34,10 +36,10 @@ RUN pip install http://cairographics.org/releases/py2cairo-1.8.10.tar.gz
 
 RUN install -d -m 755 /var/lib/graphite
 WORKDIR /var/lib/graphite
-RUN pip install whisper==$GRAPHITE_VERSION --install-option="--prefix=/var/lib/graphite" --install-option="--install-lib=/var/lib/graphite/lib"
-RUN curl -sL https://raw.githubusercontent.com/graphite-project/carbon/$GRAPHITE_VERSION/requirements.txt > /tmp/carbon-requirements.txt
+RUN pip install whisper==$WHISPER_VERSION --install-option="--prefix=/var/lib/graphite" --install-option="--install-lib=/var/lib/graphite/lib"
+RUN curl -sL https://raw.githubusercontent.com/graphite-project/carbon/$CARBON_VERSION/requirements.txt > /tmp/carbon-requirements.txt
 RUN pip install -r /tmp/carbon-requirements.txt
-RUN pip install carbon==$GRAPHITE_VERSION --install-option="--prefix=/var/lib/graphite" --install-option="--install-lib=/var/lib/graphite/lib"
+RUN pip install carbon==$CARBON_VERSION --install-option="--prefix=/var/lib/graphite" --install-option="--install-lib=/var/lib/graphite/lib"
 RUN curl -sL https://raw.githubusercontent.com/graphite-project/graphite-web/$GRAPHITE_VERSION/requirements.txt > /tmp/graphite-requirements.txt
 RUN pip install -r /tmp/graphite-requirements.txt
 RUN pip install uwsgi==2.0.1
