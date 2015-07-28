@@ -8,7 +8,7 @@ COPY sources.list /etc/apt/sources.list
 
 RUN \
   apt-get update && \
-  apt-get install -y --force-yes build-essential locales git curl supervisor libreadline-dev zlib1g zlib1g-dev libbz2-dev libsqlite3-dev libssl-dev && \
+  apt-get install -y --force-yes ca-certificates build-essential locales git curl supervisor libreadline-dev zlib1g zlib1g-dev libbz2-dev libsqlite3-dev libssl-dev && \
   rm -fr /var/lib/apt/lists/*
 
 # Set the locale
