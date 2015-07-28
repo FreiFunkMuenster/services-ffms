@@ -12,9 +12,10 @@ RUN \
   rm -fr /var/lib/apt/lists/*
 
 # Set the locale
-RUN echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen
-RUN locale-gen de_DE.UTF-8  
-RUN update-locale LANG=de_DE.UTF-8  
+RUN \ 
+  echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen && \
+  locale-gen de_DE.UTF-8 && \ 
+  update-locale LANG=de_DE.UTF-8  
 
 ENV LANG de_DE.UTF-8  
 ENV LANGUAGE de_DE:de  
