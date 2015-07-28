@@ -2,25 +2,16 @@ FROM debian:wheezy
 
 MAINTAINER Christian Elberfeld <elberfeld@web.de>
 
-ENV DEBIAN_FRONTEND noninteractive
-
 COPY sources.list /etc/apt/sources.list 
+
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN \
   apt-get update && \
-  apt-get install -y --force-yes ca-certificates build-essential locales git curl supervisor libreadline-dev zlib1g zlib1g-dev libbz2-dev libsqlite3-dev libssl-dev && \
+  apt-get install -y --force-yes build-essential locales git curl supervisor libreadline-dev zlib1g zlib1g-dev libbz2-dev libsqlite3-dev libssl-dev && \
   locale-gen en_US.UTF-8 \
   rm -fr /var/lib/apt/lists/*
 
-# Set the locale
-#RUN \ 
-#  echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen && \
-#  locale-gen de_DE.UTF-8 && \ 
-#  update-locale LANG=de_DE.UTF-8  
-
-#ENV LANG de_DE.UTF-8  
-#ENV LANGUAGE de_DE:de  
-#ENV LC_ALL de_DE.UTF-8
 ENV PATH /opt/python/bin:/usr/local/bin:$PATH
 
 # install python
@@ -38,10 +29,8 @@ RUN python /tmp/get-pip.py
 ENV GRAPHITE_VERSION 0.9.12
 
 # install graphite modules
-RUN \
-  apt-get update && apt-get install -y libcairo2-dev --fix-missing && \
-  rm -fr /var/lib/apt/lists/* && \
-  pip install http://cairographics.org/releases/py2cairo-1.8.10.tar.gz 
+RUN apt-get update && apt-get install -y libcairo2-dev --fix-missing && rm -fr /var/lib/apt/lists/*
+RUN pip install http://cairographics.org/releases/py2cairo-1.8.10.tar.gz
 
 RUN install -d -m 755 /var/lib/graphite
 WORKDIR /var/lib/graphite
