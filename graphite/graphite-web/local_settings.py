@@ -1,5 +1,5 @@
 
-DEBUG = True
+DEBUG = False
 
 SECRET_KEY = 'docker'
 
