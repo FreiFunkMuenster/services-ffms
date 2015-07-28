@@ -18,9 +18,9 @@ WHISPER_DIR = '/var/lib/graphite/storage/whisper/'
 DEFAULT_CACHE_DURATION = 0
 
 LOG_DIR = '/var/log/graphite/'
-LOG_RENDERING_PERFORMANCE = True
-LOG_METRIC_ACCESS = True
-LOG_CACHE_PERFORMANCE = True
+LOG_RENDERING_PERFORMANCE = False
+LOG_METRIC_ACCESS = False
+LOG_CACHE_PERFORMANCE = False
 
 DATABASES = {
     'default': {
