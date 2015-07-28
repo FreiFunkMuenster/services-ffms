@@ -37,7 +37,7 @@ RUN python /tmp/get-pip.py
 ENV GRAPHITE_VERSION 0.9.12
 
 # install graphite modules
-RUN 
+RUN \
   apt-get update && apt-get install -y libcairo2-dev --fix-missing && \
   rm -fr /var/lib/apt/lists/* && \
   pip install http://cairographics.org/releases/py2cairo-1.8.10.tar.gz 
