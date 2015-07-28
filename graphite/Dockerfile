@@ -2,9 +2,18 @@ FROM debian:wheezy
 
 MAINTAINER Christian Elberfeld <elberfeld@web.de>
 
-COPY sources.list /etc/apt/sources.list 
+# Set the locale
+RUN echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen
+RUN locale-gen de_DE.UTF-8  
+RUN update-locale LANG=de_DE.UTF-8  
+ENV LANG de_DE.UTF-8  
+ENV LANGUAGE de_DE:de  
+ENV LC_ALL de_DE.UTF-8
+
 
 ENV DEBIAN_FRONTEND noninteractive
+
+COPY sources.list /etc/apt/sources.list 
 
 RUN \
   apt-get update && \
