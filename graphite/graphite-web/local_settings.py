@@ -5,6 +5,7 @@ SECRET_KEY = 'docker'
 
 TIME_ZONE = 'Europe/Berlin'
 LANGUAGE_CODE = 'de-DE'
+USE_L10N = True
 
 URL_PREFIX= '/graphite'
 
