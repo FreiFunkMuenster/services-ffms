@@ -4,6 +4,7 @@ DEBUG = False
 SECRET_KEY = 'docker'
 
 TIME_ZONE = 'Europe/Berlin'
+LANGUAGE_CODE = 'de-DE'
 
 URL_PREFIX= '/graphite'
 
