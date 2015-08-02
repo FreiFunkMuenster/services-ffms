@@ -4,7 +4,7 @@
     "hostname": "gateway-fanlin",
     "network": {
       "mesh_interfaces": [
-        "de:ad:be:ef:43:02"
+        "6e:24:bd:10:9b:88"
       ]
     },
     "hardware": {
