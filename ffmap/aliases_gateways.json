@@ -4,7 +4,13 @@
     "hostname": "gateway-fanlin",
     "network": {
       "mesh_interfaces": [
-        "6e:24:bd:10:9b:88"
+        "de:ad:be:ef:43:02",
+        "de:ad:be:ef:44:02",
+        "de:ad:be:ef:45:02",
+        "de:ad:be:ef:46:02",
+        "de:ad:be:ef:47:02",
+        "de:ad:be:ef:48:02",
+        "de:ad:be:ef:49:02"
       ]
     },
     "hardware": {
@@ -22,7 +28,13 @@
     "hostname": "gateway-fusselkater",
     "network": {
       "mesh_interfaces": [
-        "de:ad:be:ef:43:04"
+        "de:ad:be:ef:43:04",
+        "de:ad:be:ef:44:04",
+        "de:ad:be:ef:45:04",
+        "de:ad:be:ef:46:04",
+        "de:ad:be:ef:47:04",
+        "de:ad:be:ef:48:04",
+        "de:ad:be:ef:49:04"
       ]
     },
     "hardware": {
@@ -40,7 +52,13 @@
     "hostname": "gateway-commander1024",
     "network": {
       "mesh_interfaces": [
-        "de:ad:be:ef:43:05"
+        "de:ad:be:ef:43:05",
+        "de:ad:be:ef:44:05",
+        "de:ad:be:ef:45:05",
+        "de:ad:be:ef:46:05",
+        "de:ad:be:ef:47:05",
+        "de:ad:be:ef:48:05",
+        "de:ad:be:ef:49:05"
       ]
     },
     "hardware": {
@@ -58,7 +76,37 @@
     "hostname": "gateway-parad0x",
     "network": {
       "mesh_interfaces": [
-        "de:ad:be:ef:43:06"
+        "de:ad:be:ef:43:06",
+        "de:ad:be:ef:44:06",
+        "de:ad:be:ef:45:06",
+        "de:ad:be:ef:46:06",
+        "de:ad:be:ef:47:06",
+        "de:ad:be:ef:48:06",
+        "de:ad:be:ef:49:06"
+      ]
+    },
+    "hardware": {
+      "model": "qemu-kvm"
+    },
+    "software": {
+      "firmware": {
+        "release": "Wheezy",
+        "base": "Debian"
+      }
+    }
+  },
+  {
+    "node_id": "gateway-sense",
+    "hostname": "gateway-sense",
+    "network": {
+      "mesh_interfaces": [
+        "de:ad:be:ef:43:07",
+        "de:ad:be:ef:44:07",
+        "de:ad:be:ef:45:07",
+        "de:ad:be:ef:46:07",
+        "de:ad:be:ef:47:07",
+        "de:ad:be:ef:48:07",
+        "de:ad:be:ef:49:07"
       ]
     },
     "hardware": {
