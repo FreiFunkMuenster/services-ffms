@@ -33,15 +33,21 @@
     "node_id": "gateway-fusselkater",
     "hostname": "gateway-fusselkater",
     "network": {
-      "mesh_interfaces": [
-        "de:ad:be:ef:43:04",
-        "de:ad:be:ef:44:04",
-        "de:ad:be:ef:45:04",
-        "de:ad:be:ef:46:04",
-        "de:ad:be:ef:47:04",
-        "de:ad:be:ef:48:04",
-        "de:ad:be:ef:49:04"
-      ]
+      "mesh": {
+	    "bat0": { 
+		  "interfaces": {
+		    "tunnel": [
+              "de:ad:be:ef:43:04",
+              "de:ad:be:ef:44:04",
+              "de:ad:be:ef:45:04",
+              "de:ad:be:ef:46:04",
+              "de:ad:be:ef:47:04",
+              "de:ad:be:ef:48:04",
+              "de:ad:be:ef:49:04"
+            ]
+		  }
+		}
+      }		
     },
     "hardware": {
       "model": "qemu-kvm"
@@ -57,15 +63,21 @@
     "node_id": "gateway-commander1024",
     "hostname": "gateway-commander1024",
     "network": {
-      "mesh_interfaces": [
-        "de:ad:be:ef:43:05",
-        "de:ad:be:ef:44:05",
-        "de:ad:be:ef:45:05",
-        "de:ad:be:ef:46:05",
-        "de:ad:be:ef:47:05",
-        "de:ad:be:ef:48:05",
-        "de:ad:be:ef:49:05"
-      ]
+      "mesh": {
+	    "bat0": { 
+		  "interfaces": {
+		    "tunnel": [
+              "de:ad:be:ef:43:05",
+              "de:ad:be:ef:44:05",
+              "de:ad:be:ef:45:05",
+              "de:ad:be:ef:46:05",
+              "de:ad:be:ef:47:05",
+              "de:ad:be:ef:48:05",
+              "de:ad:be:ef:49:05"
+            ]
+		  }
+		}
+      }		
     },
     "hardware": {
       "model": "qemu-kvm"
@@ -81,15 +93,21 @@
     "node_id": "gateway-parad0x",
     "hostname": "gateway-parad0x",
     "network": {
-      "mesh_interfaces": [
-        "de:ad:be:ef:43:06",
-        "de:ad:be:ef:44:06",
-        "de:ad:be:ef:45:06",
-        "de:ad:be:ef:46:06",
-        "de:ad:be:ef:47:06",
-        "de:ad:be:ef:48:06",
-        "de:ad:be:ef:49:06"
-      ]
+      "mesh": {
+	    "bat0": { 
+		  "interfaces": {
+		    "tunnel": [
+              "de:ad:be:ef:43:06",
+              "de:ad:be:ef:44:06",
+              "de:ad:be:ef:45:06",
+              "de:ad:be:ef:46:06",
+              "de:ad:be:ef:47:06",
+              "de:ad:be:ef:48:06",
+              "de:ad:be:ef:49:06"
+            ]
+		  }
+		}
+      }		
     },
     "hardware": {
       "model": "qemu-kvm"
@@ -105,33 +123,21 @@
     "node_id": "gateway-sense",
     "hostname": "gateway-sense",
     "network": {
-      "mesh_interfaces": [
-        "de:ad:be:ef:43:07",
-        "de:ad:be:ef:44:07",
-        "de:ad:be:ef:45:07",
-        "de:ad:be:ef:46:07",
-        "de:ad:be:ef:47:07",
-        "de:ad:be:ef:48:07",
-        "de:ad:be:ef:49:07"
-      ]
-    },
-    "hardware": {
-      "model": "qemu-kvm"
-    },
-    "software": {
-      "firmware": {
-        "release": "Wheezy",
-        "base": "Debian"
-      }
-    }
-  },
-  {
-    "node_id": "icvpn-test",
-    "hostname": "icvpn-test",
-    "network": {
-      "mesh_interfaces": [
-        "0e:37:d1:d2:2a:ab"
-      ]
+      "mesh": {
+	    "bat0": { 
+		  "interfaces": {
+		    "tunnel": [
+              "de:ad:be:ef:43:07",
+              "de:ad:be:ef:44:07",
+              "de:ad:be:ef:45:07",
+              "de:ad:be:ef:46:07",
+              "de:ad:be:ef:47:07",
+              "de:ad:be:ef:48:07",
+              "de:ad:be:ef:49:07"
+            ]
+		  }
+		}
+      }		
     },
     "hardware": {
       "model": "qemu-kvm"
@@ -147,9 +153,21 @@
     "node_id": "ffms-services",
     "hostname": "ffms-services",
     "network": {
-      "mesh_interfaces": [
-        "de:ad:be:ef:43:10"
-      ]
+      "mesh": {
+	    "bat0": { 
+		  "interfaces": {
+		    "tunnel": [
+              "de:ad:be:ef:43:10",
+              "de:ad:be:ef:44:10",
+              "de:ad:be:ef:45:10",
+              "de:ad:be:ef:46:10",
+              "de:ad:be:ef:47:10",
+              "de:ad:be:ef:48:10",
+              "de:ad:be:ef:49:10"
+            ]
+		  }
+		}
+      }		
     },
     "hardware": {
       "model": "qemu-kvm"
@@ -165,9 +183,21 @@
     "node_id": "ffms-monitoring",
     "hostname": "ffms-monitoring",
     "network": {
-      "mesh_interfaces": [
-        "de:ad:be:ef:43:13"
-      ]
+      "mesh": {
+	    "bat0": { 
+		  "interfaces": {
+		    "tunnel": [
+              "de:ad:be:ef:43:13",
+              "de:ad:be:ef:44:13",
+              "de:ad:be:ef:45:13",
+              "de:ad:be:ef:46:13",
+              "de:ad:be:ef:47:13",
+              "de:ad:be:ef:48:13",
+              "de:ad:be:ef:49:13"
+            ]
+		  }
+		}
+      }		
     },
     "hardware": {
       "model": "qemu-kvm"
