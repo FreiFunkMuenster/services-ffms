@@ -7,6 +7,7 @@
 	  "gateway": true
 	},
     "network": {
+	  "mac": "de:ad:be:ef:43:02",
       "mesh_interfaces": [
         "de:ad:be:ef:43:02",
         "de:ad:be:ef:44:02",
