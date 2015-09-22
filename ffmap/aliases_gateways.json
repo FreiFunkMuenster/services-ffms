@@ -2,10 +2,6 @@
   {
     "node_id": "gateway-fanlin",
     "hostname": "gateway-fanlin",
-	"flags": {
-	  "online": true,
-	  "gateway": true
-	},
     "network": {
 	  "mac": "de:ad:be:ef:43:02",
       "mesh_interfaces": [
