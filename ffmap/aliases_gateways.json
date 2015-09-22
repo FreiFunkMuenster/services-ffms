@@ -2,6 +2,10 @@
   {
     "node_id": "gateway-fanlin",
     "hostname": "gateway-fanlin",
+	"flags": {
+	  "online": True,
+	  "gateway": True
+	}
     "network": {
       "mesh": {
 	    "bat0": { 
