@@ -7,6 +7,15 @@
 	  "gateway": true
 	},
     "network": {
+      "mesh_interfaces": [
+        "de:ad:be:ef:43:02",
+        "de:ad:be:ef:44:02",
+        "de:ad:be:ef:45:02",
+        "de:ad:be:ef:46:02",
+        "de:ad:be:ef:47:02",
+        "de:ad:be:ef:48:02",
+        "de:ad:be:ef:49:02"
+      ],		
       "mesh": {
 	    "bat0": { 
 		  "interfaces": {
