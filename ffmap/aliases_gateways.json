@@ -5,7 +5,7 @@
 	"flags": {
 	  "online": true,
 	  "gateway": true
-	}
+	},
     "network": {
       "mesh": {
 	    "bat0": { 
