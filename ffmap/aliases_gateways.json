@@ -1,9 +1,8 @@
-[
-  {
+{
+  "de:ad:be:ef:43:02": {
     "node_id": "gateway-fanlin",
     "hostname": "gateway-fanlin",
     "network": {
-	  "mac": "de:ad:be:ef:43:02",
       "mesh_interfaces": [
         "de:ad:be:ef:43:02",
         "de:ad:be:ef:44:02",
@@ -39,7 +38,7 @@
       }
     }
   },
-  {
+  "de:ad:be:ef:43:04": {
     "node_id": "gateway-fusselkater",
     "hostname": "gateway-fusselkater",
     "network": {
@@ -69,7 +68,7 @@
       }
     }
   },
-  {
+  "de:ad:be:ef:43:05": {
     "node_id": "gateway-commander1024",
     "hostname": "gateway-commander1024",
     "network": {
@@ -99,7 +98,7 @@
       }
     }
   },
-  {
+  "de:ad:be:ef:43:06": {
     "node_id": "gateway-parad0x",
     "hostname": "gateway-parad0x",
     "network": {
@@ -129,7 +128,7 @@
       }
     }
   },
-  {
+  "de:ad:be:ef:43:07": {
     "node_id": "gateway-sense",
     "hostname": "gateway-sense",
     "network": {
@@ -159,7 +158,7 @@
       }
     }
   },
-  {
+  "de:ad:be:ef:43:10": {
     "node_id": "ffms-services",
     "hostname": "ffms-services",
     "network": {
@@ -189,7 +188,7 @@
       }
     }
   },
-  {
+  "de:ad:be:ef:43:13": {
     "node_id": "ffms-monitoring",
     "hostname": "ffms-monitoring",
     "network": {
@@ -219,5 +218,5 @@
       }
     }
   }
-]
+}
 
