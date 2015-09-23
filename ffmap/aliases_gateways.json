@@ -1,8 +1,9 @@
 {
-  "de:ad:be:ef:43:02": {
+  "gateway-fanlin": {
     "node_id": "gateway-fanlin",
     "hostname": "gateway-fanlin",
     "network": {
+	  "mac": "de:ad:be:ef:43:02",
       "mesh_interfaces": [
         "de:ad:be:ef:43:02",
         "de:ad:be:ef:44:02",
@@ -36,9 +37,9 @@
         "release": "Wheezy",
         "base": "Debian"
       }
-    }
+    }	
   },
-  "de:ad:be:ef:43:04": {
+  "gateway-fusselkater": {
     "node_id": "gateway-fusselkater",
     "hostname": "gateway-fusselkater",
     "network": {
@@ -68,7 +69,7 @@
       }
     }
   },
-  "de:ad:be:ef:43:05": {
+  "gateway-commander1024": {
     "node_id": "gateway-commander1024",
     "hostname": "gateway-commander1024",
     "network": {
@@ -98,7 +99,7 @@
       }
     }
   },
-  "de:ad:be:ef:43:06": {
+  "gateway-parad0x": {
     "node_id": "gateway-parad0x",
     "hostname": "gateway-parad0x",
     "network": {
@@ -128,7 +129,7 @@
       }
     }
   },
-  "de:ad:be:ef:43:07": {
+  "gateway-sense": {
     "node_id": "gateway-sense",
     "hostname": "gateway-sense",
     "network": {
@@ -143,66 +144,6 @@
               "de:ad:be:ef:47:07",
               "de:ad:be:ef:48:07",
               "de:ad:be:ef:49:07"
-            ]
-		  }
-		}
-      }		
-    },
-    "hardware": {
-      "model": "qemu-kvm"
-    },
-    "software": {
-      "firmware": {
-        "release": "Wheezy",
-        "base": "Debian"
-      }
-    }
-  },
-  "de:ad:be:ef:43:10": {
-    "node_id": "ffms-services",
-    "hostname": "ffms-services",
-    "network": {
-      "mesh": {
-	    "bat0": { 
-		  "interfaces": {
-		    "tunnel": [
-              "de:ad:be:ef:43:10",
-              "de:ad:be:ef:44:10",
-              "de:ad:be:ef:45:10",
-              "de:ad:be:ef:46:10",
-              "de:ad:be:ef:47:10",
-              "de:ad:be:ef:48:10",
-              "de:ad:be:ef:49:10"
-            ]
-		  }
-		}
-      }		
-    },
-    "hardware": {
-      "model": "qemu-kvm"
-    },
-    "software": {
-      "firmware": {
-        "release": "Wheezy",
-        "base": "Debian"
-      }
-    }
-  },
-  "de:ad:be:ef:43:13": {
-    "node_id": "ffms-monitoring",
-    "hostname": "ffms-monitoring",
-    "network": {
-      "mesh": {
-	    "bat0": { 
-		  "interfaces": {
-		    "tunnel": [
-              "de:ad:be:ef:43:13",
-              "de:ad:be:ef:44:13",
-              "de:ad:be:ef:45:13",
-              "de:ad:be:ef:46:13",
-              "de:ad:be:ef:47:13",
-              "de:ad:be:ef:48:13",
-              "de:ad:be:ef:49:13"
             ]
 		  }
 		}
