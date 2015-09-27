@@ -1,9 +1,9 @@
 #!/bin/bash 
 
-# Stop Docker Containder if running 
+# Stop Docker Container if running 
 docker stop grafana
 
-# Remove docker Container if existing 
+# Remove Docker Container if existing 
 docker rm grafana
 
 # Setup and Rund Docker Container 
