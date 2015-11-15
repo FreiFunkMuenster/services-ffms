@@ -2,8 +2,8 @@ FROM php:5.6-apache
 MAINTAINER Christian Elberfeld <elberfeld@web.de>
 
 #install PHP extensions
-RUN apt-get update 
-	&& apt-get install -y libpng12-dev libjpeg-dev 
+RUN apt-get update \ 
+	&& apt-get install -y libpng12-dev libjpeg-dev \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 	&& docker-php-ext-install gd
