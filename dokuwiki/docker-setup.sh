@@ -7,7 +7,7 @@ docker stop dokuwiki
 docker rm dokuwiki
 
 # Build Docker Container 
-docker build -t dokuwiki .  
+docker build --force-rm -t dokuwiki .  
 
 # Setup and Rund Docker Container 
 docker run --name=dokuwiki --restart=always -d -p 127.0.0.1:8081:80 -v /var/data/dokuwiki:/var/www/html dokuwiki 
