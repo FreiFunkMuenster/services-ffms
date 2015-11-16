@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-# Stop Docker Containder if running 
+# Stop Docker Container if running 
 docker stop graphite
 
 # Remove docker Container if existing 
