@@ -1,0 +1,1 @@
+*/3 * * * * root php5 /data/upload/api/cron.php
