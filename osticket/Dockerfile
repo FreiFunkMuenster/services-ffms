@@ -55,7 +55,7 @@ RUN mv /data/upload/bootstrap.php /data/upload/bootstrap.php.orig && \
 
 
 # Add nginx site
-ADD crontab /etc/cron.d/crontab
+ADD osticket-cron /etc/cron.d/osticket-cron
 ADD virtualhost /etc/nginx/sites-available/default
 ADD supervisord.conf /data/supervisord.conf
 
