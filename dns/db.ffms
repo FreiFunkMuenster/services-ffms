@@ -20,3 +20,7 @@ firmware                        AAAA    2a03:2260:115::15
 
 ;Icinga
 status                          CNAME   monitoring.freifunk-muenster.de.
+
+$ORIGIN dyn.ffms.
+@				IN NS  ns.dyn.ffms.
+ns       			IN A   10.43.0.17
