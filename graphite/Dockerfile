@@ -45,10 +45,10 @@ RUN pip install graphite-web==$GRAPHITE_VERSION --install-option="--prefix=/var/
 
 RUN install -d m 755 /var/log/graphite
 RUN install -d -m 755 /etc/carbon
-COPY carbon.conf /etc/carbon/carbon.conf
-COPY storage-schemas.conf /etc/carbon/storage-schemas.conf
-COPY local_settings.py /var/lib/graphite/lib/graphite/local_settings.py
-COPY graphite.wsgi /var/lib/graphite/conf/graphite.wsgi
+COPY carbon\carbon.conf /etc/carbon/carbon.conf
+COPY carbon\storage-schemas.conf /etc/carbon/storage-schemas.conf
+COPY graphite-web\local_settings.py /var/lib/graphite/lib/graphite/local_settings.py
+COPY graphite-web\graphite.wsgi /var/lib/graphite/conf/graphite.wsgi
 COPY supervisord.conf /etc/supervisord.conf
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
