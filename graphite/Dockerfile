@@ -26,8 +26,7 @@ RUN locale-gen
 RUN curl -s https://bootstrap.pypa.io/get-pip.py > /tmp/get-pip.py
 RUN python /tmp/get-pip.py
 
-ENV GRAPHITE_VERSION 0.9.13
-ENV GRAPHITE_GIT_TAG 0.9.13-pre1
+ENV GRAPHITE_VERSION 0.9.15
 
 # install graphite modules
 RUN apt-get update && apt-get install -y libcairo2-dev --fix-missing && rm -fr /var/lib/apt/lists/*
@@ -36,19 +35,20 @@ RUN pip install http://cairographics.org/releases/py2cairo-1.8.10.tar.gz
 RUN install -d -m 755 /var/lib/graphite
 WORKDIR /var/lib/graphite
 RUN pip install whisper==$GRAPHITE_VERSION --install-option="--prefix=/var/lib/graphite" --install-option="--install-lib=/var/lib/graphite/lib"
-RUN curl -sL https://raw.githubusercontent.com/graphite-project/carbon/$GRAPHITE_GIT_TAG/requirements.txt > /tmp/carbon-requirements.txt
+RUN curl -sL https://raw.githubusercontent.com/graphite-project/carbon/$GRAPHITE_VERSION/requirements.txt > /tmp/carbon-requirements.txt
 RUN pip install -r /tmp/carbon-requirements.txt
 RUN pip install carbon==$GRAPHITE_VERSION --install-option="--prefix=/var/lib/graphite" --install-option="--install-lib=/var/lib/graphite/lib"
-RUN curl -sL https://raw.githubusercontent.com/graphite-project/graphite-web/$GRAPHITE_GIT_TAG/requirements.txt > /tmp/graphite-requirements.txt
+RUN curl -sL https://raw.githubusercontent.com/graphite-project/graphite-web/$GRAPHITE_VERSION/requirements.txt > /tmp/graphite-requirements.txt
 RUN pip install -r /tmp/graphite-requirements.txt
 RUN pip install uwsgi==2.0.1
 RUN pip install graphite-web==$GRAPHITE_VERSION --install-option="--prefix=/var/lib/graphite" --install-option="--install-lib=/var/lib/graphite/lib"
 
 RUN install -d m 755 /var/log/graphite
 RUN install -d -m 755 /etc/carbon
-COPY carbon /etc/carbon
-COPY graphite-web/local_settings.py /var/lib/graphite/lib/graphite/local_settings.py
-COPY graphite-web/graphite.wsgi /var/lib/graphite/conf/graphite.wsgi
+COPY carbon.conf /etc/carbon/carbon.conf
+COPY storage-schemas.conf /etc/carbon/storage-schemas.conf
+COPY local_settings.py /var/lib/graphite/lib/graphite/local_settings.py
+COPY graphite.wsgi /var/lib/graphite/conf/graphite.wsgi
 COPY supervisord.conf /etc/supervisord.conf
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
