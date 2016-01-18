@@ -19,12 +19,12 @@ RUN npm install -g grunt-cli bower
 # Clone and Checkout GIT
 # 
 RUN cd /var && \   
-    git clone https://github.com/tcatm/meshviewer.git && \
+    git clone https://github.com/FreiFunkMuenster/meshviewer.git && \
 	cd /var/meshviewer/ && \
-	git checkout v3
+	git checkout plumpudding
    
 # Copy Map Config  
-COPY config.js /var/meshviewer/
+COPY config.json /var/meshviewer/
 
 # Buils Map 
 RUN cd /var/meshviewer && \ 
