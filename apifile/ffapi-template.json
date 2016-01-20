@@ -59,7 +59,7 @@
   ],
   "nodeMaps": [
     {
-      "url": "https://freifunk-muensterland.de/map/",
+      "url": "https://service.freifunk-muensterland.de/maps/map/",
       "interval": "1x pro Minute",
       "technicalType": "ffmap"
     }
