@@ -13,7 +13,7 @@
     }
   },
   "contact": {
-    "email": "info@freifunk-muenster.de",
+    "email": "info@freifunk-muensterland.de",
     "phone": "+49 251 39500271",
     "irc": "irc://irc.hackint.org/ffms",
     "facebook": "https://www.facebook.com/FreifunkMS",
@@ -59,7 +59,7 @@
   ],
   "nodeMaps": [
     {
-      "url": "https://freifunk-muensterland.de/map/",
+      "url": "https://service.freifunk-muensterland.de/maps/map/",
       "interval": "1x pro Minute",
       "technicalType": "ffmap"
     }
@@ -77,7 +77,7 @@
   "techDetails": {
     "firmware": {
       "name": "gluon",
-      "url": "https://freifunk-muenster.de/firmwareliste/",
+      "url": "https://freifunk-muensterland.de/site-ffms/stable/factory/",
       "docs": "https://github.com/FreiFunkMuenster/site-ffms"
     },
     "dns": [
@@ -94,12 +94,48 @@
     "networks": {
       "ipv6": [
         {
-          "network": "2a03:2260:115::/64"
+          "network": "2a03:2260:115:0100::/64"
+        }
+        {
+          "network": "2a03:2260:115:0200::/64"
+        }
+        {
+          "network": "2a03:2260:115:0300::/64"
+        }
+        {
+          "network": "2a03:2260:115:0400::/64"
+        }
+        {
+          "network": "2a03:2260:115:0500::/64"
+        }
+        {
+          "network": "2a03:2260:115:0600::/64"
+        }
+        {
+          "network": "2a03:2260:115:fe03::/64"
         }
       ],
       "ipv4": [
         {
-          "network": "10.43.0.0/16"
+          "network": "10.43.8.0/21"
+        }
+        {
+          "network": "10.43.16.0/21"
+        }
+        {
+          "network": "10.43.24.0/21"
+        }
+        {
+          "network": "10.43.32.0/21"
+        }
+        {
+          "network": "10.43.40.0/21"
+        }
+        {
+          "network": "10.43.48.0/21"
+        }
+        {
+          "network": "10.43.112.0/20"
         }
       ]
     },
