@@ -23,4 +23,4 @@ status                          CNAME   monitoring.freifunk-muenster.de.
 
 $ORIGIN dyn.ffms.
 @				IN NS  ns.dyn.ffms.
-ns       			IN A   10.43.0.17
+ns       			IN A   10.43.8.22
