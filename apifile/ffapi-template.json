@@ -13,7 +13,7 @@
     }
   },
   "contact": {
-    "email": "info@freifunk-muenster.de",
+    "email": "info@freifunk-muensterland.de",
     "phone": "+49 251 39500271",
     "facebook": "https://www.facebook.com/FreifunkMS",
     "twitter": "@freifunk_ms"
@@ -76,7 +76,7 @@
   "techDetails": {
     "firmware": {
       "name": "gluon",
-      "url": "https://freifunk-muenster.de/firmwareliste/",
+      "url": "https://freifunk-muensterland.de/site-ffms/stable/factory/",
       "docs": "https://github.com/FreiFunkMuenster/site-ffms"
     },
     "dns": [
@@ -93,7 +93,7 @@
     "networks": {
       "ipv6": [
         {
-          "network": "2a03:2260:115::/64"
+          "network": "2a03:2260:115::/48"
         }
       ],
       "ipv4": [
