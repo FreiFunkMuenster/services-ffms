@@ -1,12 +1,12 @@
 
-# Docker Container für den Betrieb des Dokuwiki auf der Webseite
+# Docker Container für den Betrieb des DokuWikis auf der Webseite
 
 Das Script docker-setup.sh erstellt einen Container mit einem entsprechend konfigurierten Webserver und startet diesen. 
 Die Webseite wird lokal auf Port 8081 bereitgestellt. 
 
 ## Datenverzeichnis
 
-Das eigentliche Datenverzeichnis liegt auf dem Server in /var/data/dokuwiki und enthält die PHP-Dateien von Dokuwiki sowie die Anwendugsdaten.
+Das eigentliche Datenverzeichnis liegt auf dem Server in /var/data/dokuwiki und enthält die PHP-Dateien von DokuWiki sowie die Anwendungsdaten.
 
 ## Umzug von dem 'alten' Server
 
