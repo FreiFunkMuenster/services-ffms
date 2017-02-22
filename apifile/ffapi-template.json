@@ -76,7 +76,7 @@
   "techDetails": {
     "firmware": {
       "name": "gluon",
-      "url": "https://freifunk-muensterland.de/site-ffms/stable/factory/",
+      "url": "https://freifunk-muensterland.de/md-fw-dl/",
       "docs": "https://github.com/FreiFunkMuenster/site-ffms"
     },
     "dns": [
